@@ -130,3 +130,15 @@ dist
 .pnp.*
 bin/App.class
 bin/model/database/dbFunctions.class
+bin/index.html
+bin/model/tables/dozenten.class
+bin/model/tables/kontaktDaten.class
+bin/model/tables/kurse.class
+bin/model/tables/mitarbeiter.class
+bin/model/tables/teilnehmer.class
+bin/view/img/Colleagues discussing startup idea - 640x427 1.png
+bin/view/img/Group Messaging - 640x427 1.png
+bin/view/img/Vector (1).png
+bin/view/img/Vector.png
+bin/view/img/WhatsApp Image 2024-02-06 at 12.30.24.jpeg
+bin/view/styles/common.css
