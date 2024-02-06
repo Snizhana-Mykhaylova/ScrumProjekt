@@ -2,6 +2,8 @@ package model.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class dbFunctions {
 
@@ -32,5 +34,25 @@ public class dbFunctions {
         }
 
         return connect;
+    }
+
+    public static void readCompleteTable(Connection connect, String tableName) {
+
+        Statement statement;
+        ResultSet resultSet;
+
+        try {
+            String query = String.format("SELECT * FROM %s ;", tableName);
+            statement = connect.createStatement();
+            resultSet = statement.executeQuery(query);
+
+            while (resultSet.next()) {
+                
+                System.out.println();
+            }
+        
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
     }
 }
