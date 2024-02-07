@@ -7,8 +7,10 @@ public class App {
         
         Connection connect = dbFunctions.connectToDb();
         
+        dbFunctions.readCompleteTable(connect, "mitarbeiter");
 
-        
-        
+        System.out.println();
+
+        dbFunctions.readCompleteTable(connect, "dozenten");
     }
 }
